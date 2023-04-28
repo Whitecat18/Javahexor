@@ -1,6 +1,6 @@
 // Coded By Smukx
-//const botToken = 'TELEGRAM_BOT_API_KEY';
-//const chatId = 'YOUR_CHAT_ID';
+const botToken = 'TELEGRAM_BOT_API_KEY';
+const chatId = 'YOUR_CHAT_ID';
 
 
 const getIP = async () => {
