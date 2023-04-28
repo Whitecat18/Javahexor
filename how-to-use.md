@@ -8,7 +8,7 @@ The information collected includes your public IP address, location, device lang
 
 To make this code work, you need to replace the placeholders "TELEGRAM_BOT_API_KEY" and "YOUR_CHAT_ID" with your own values.
 
-You can obtain a Telegram bot API key by creating a new bot through Telegram's BotFather, and you can find your chat ID by sending a message to the bot and checking the bot's API response.
+You can obtain a Telegram bot API key by creating a new bot through Telegram's BotFather, and you can find your chat ID by sending a message to the bot and checking the bot's API response. the other way you can obtain your CHAT_ID is to visit <a href="https://t.me/raw_data_bot" > @raw_data_bot <a/>
 
 Once you've replaced the placeholders with your own values, you can run this code in a web browser's developer console or in a JavaScript file loaded by a web page.
 
