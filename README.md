@@ -7,7 +7,7 @@ This project is designed to showcase JavaScript hacks and techniques to retrieve
 <img src="https://images.pond5.com/4k-hacker-war-super-modern-footage-073380072_iconl.jpeg" height=300 />
 
 ## Features
-The following features are implemented in this project:
+The following features are implemented in this project: 
 
 Retrieving a person's public IP address using JavaScript.
 Retrieving a person's location using their IP address.
