@@ -1,7 +1,7 @@
 ## Introduction
 This project is designed to showcase JavaScript hacks and techniques to retrieve information about a person's public IP address, among other things and send information via telegram bot.
 
-<a href="https://github.com/Whitecat18/javascript-hacks/blob/main/how-to-use.md" > Click Here </a> to know how to use this tool
+<a href="https://github.com/Whitecat18/javascript-hacks/blob/main/how-to-use.md" > Click Here </a> to know how to use this Code
 
 
 <img src="https://images.pond5.com/4k-hacker-war-super-modern-footage-073380072_iconl.jpeg" height=300 />
