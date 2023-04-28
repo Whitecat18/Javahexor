@@ -11,7 +11,7 @@ Retrieving a person's browser information such as the user-agent and language se
 Retrieving information about the user's operating system.
 Checking if the user is using a mobile device or desktop.
 Retrieving information about the user's internet service provider (ISP).
-##Technologies Used
+## Technologies Used
 The following technologies were used in this project:
 
 HTML
