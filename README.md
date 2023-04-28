@@ -31,4 +31,4 @@ Retrieving the user's screen resolution.
 This project demonstrates several useful JavaScript hacks and techniques for retrieving information about a user. By understanding how to retrieve this information, developers can create more personalized and targeted experiences for their users, while also improving their website's security and performance.
 
 
-This code was created to find the scammers or criminals info in order to help the police Department . If you have an Better code . Please Feel to share .
+**This code was created to find the scammers or criminals info in order to help the Police Department . If you have an Better code . Please Feel to share .**
