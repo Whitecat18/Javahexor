@@ -22,3 +22,6 @@ Here's How it should be Done !
 
 <image src="https://raw.githubusercontent.com/Whitecat18/Whitecat18/main/files/bind.png" />
 
+
+Coded by Smukx .
+
