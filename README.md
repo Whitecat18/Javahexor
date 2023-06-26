@@ -1,6 +1,8 @@
 ## Introduction
 This project is designed to showcase JavaScript hacks and techniques to retrieve information about a person's public IP address, among other things and send information via telegram bot.
 
+**This code was created to find the scammers or criminals info in order to help the Police Department . If you have an Better code . Please Feel to share .**
+
 <a href="https://github.com/Whitecat18/javascript-hacks/blob/main/how-to-use.md" > Click Here </a> to know how to use this Code
 
 
@@ -35,5 +37,5 @@ Retrieving the user's screen resolution.
 ## Conclusion
 This project demonstrates several useful JavaScript hacks and techniques for retrieving information about a user. By understanding how to retrieve this information, developers can create more personalized and targeted experiences for their users, while also improving their website's security and performance.
 
+##### NEW GUI VERSION WILL BE AVAIABLE WITHIN THIS WEEK
 
-**This code was created to find the scammers or criminals info in order to help the Police Department . If you have an Better code . Please Feel to share .**
