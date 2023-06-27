@@ -18,9 +18,11 @@ Retrieving information about the user's operating system.
 Checking if the user is using a mobile device or desktop.
 Retrieving information about the user's internet service provider (ISP).
 
-## JAVAHEXOR WITH GUI [ NEW ] . 
+## Javahexor on GUI [ <a href="https://github.com/Whitecat18/javahexor/tree/main/GUI" > NEW </a> ] . 
 
 I use python program to automate the process and scratch the website embedded the js script . 
+
+<a href="https://github.com/Whitecat18/javahexor/tree/main/GUI" > Click Here </a> to redirect GUI Page 
 
 NOTE : THE INDEX AND JAVASCRIPT SHOULD BE IN THE SAME FILE PATH CALLED SCRIPT . HOST THE WEBSITE FROM THE SCRIPT BROWSER
 OR COPY PASTE THE BOTH locate.js and index.html file 
