@@ -19,4 +19,4 @@ IMPROMENTS :
 * Need Neat Interface 
 * Need an another option to append the locate.js to offline file { Custom Selection }
 
-If you Dont know How the code works you can <a href="https://github.com/Whitecat18/javahexor/blob/main/how-to-use.md" > Check Here </a>
+If you Dont know How the code works you can <a href="https://github.com/Whitecat18/javahexor/blob/main/how-to-use.md" target="_blank" > Check Here </a>
