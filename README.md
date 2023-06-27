@@ -20,7 +20,7 @@ Retrieving information about the user's internet service provider (ISP).
 
 ## JAVAHEXOR WITH GUI [ NEW ] . 
 
-I use python program to automate the process and scratch the website m embedded the js script . 
+I use python program to automate the process and scratch the website embedded the js script . 
 
 NOTE : THE INDEX AND JAVASCRIPT SHOULD BE IN THE SAME FILE PATH CALLED SCRIPT . HOST THE WEBSITE FROM THE SCRIPT BROWSER
 OR COPY PASTE THE BOTH locate.js and index.html file 
