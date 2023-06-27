@@ -18,11 +18,12 @@ Retrieving information about the user's operating system.
 Checking if the user is using a mobile device or desktop.
 Retrieving information about the user's internet service provider (ISP).
 
-## JAVAHEXOR WITH GUI . 
+## JAVAHEXOR WITH GUI [ NEW ] . 
 
 I use python program to automate the process and scratch the website m embedded the js script . 
 
-NOTE :   
+NOTE : THE INDEX AND JAVASCRIPT SHOULD BE IN THE SAME FILE PATH CALLED SCRIPT . HOST THE WEBSITE FROM THE SCRIPT BROWSER
+OR COPY PASTE THE BOTH locate.js and index.html file 
 
 ## Technologies Used
 The following technologies were used in this project:
