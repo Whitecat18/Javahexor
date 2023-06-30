@@ -1,9 +1,8 @@
 ## Introduction
 This project is designed to showcase JavaScript hacks and techniques to retrieve information about a person's public IP address, among other things and send information via telegram bot.
 
-**This code was created to find the scammers or criminals info in order to help the Police Department . If you have an Better code . Please Feel to share .**
 
-<a href="https://github.com/Whitecat18/javascript-hacks/blob/main/how-to-use.md" > Click Here </a> to know how to use this Code
+<a href="https://github.com/Whitecat18/javascript-hacks/blob/main/how-to-use.md" > Click Here </a> to know how to use this Code Manually
 
 
 <img src="https://images.pond5.com/4k-hacker-war-super-modern-footage-073380072_iconl.jpeg" height=300 />
@@ -22,10 +21,10 @@ Retrieving information about the user's internet service provider (ISP).
 
 I use python program to automate the process and scratch the website embedded the js script . 
 
-<a href="https://github.com/Whitecat18/javahexor/tree/main/GUI" > Click Here </a> to redirect GUI Page 
+<a href="https://github.com/Whitecat18/javahexor/tree/main/GUI" > Click Here </a> to Know more 
 
-NOTE : THE INDEX AND JAVASCRIPT SHOULD BE IN THE SAME FILE PATH CALLED SCRIPT . HOST THE WEBSITE FROM THE SCRIPT BROWSER
-OR COPY PASTE THE BOTH locate.js and index.html file 
+**NOTE : THE INDEX AND JAVASCRIPT SHOULD BE IN THE SAME FILE PATH CALLED SCRIPT . HOST THE WEBSITE FROM THE SCRIPT BROWSER
+OR COPY PASTE THE BOTH locate.js and index.html FILE**
 
 ## Technologies Used
 The following technologies were used in this project:
@@ -46,3 +45,8 @@ Retrieving the user's network speed.
 Retrieving the user's screen resolution.
 ## Conclusion
 This project demonstrates several useful JavaScript hacks and techniques for retrieving information about a user. By understanding how to retrieve this information, developers can create more personalized and targeted experiences for their users, while also improving their website's security and performance.
+
+**This code was created to find the scammers or criminals info in order to help the Police Department . If you have an Better code . Please Feel to share .**
+
+If you like this project . Dont forget to leave a star for this project 
+
