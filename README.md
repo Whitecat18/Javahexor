@@ -26,6 +26,14 @@ I use python program to automate the process and scratch the website embedded th
 **NOTE : THE INDEX AND JAVASCRIPT SHOULD BE IN THE SAME FILE PATH CALLED SCRIPT . HOST THE WEBSITE FROM THE SCRIPT BROWSER
 OR COPY PASTE THE BOTH locate.js and index.html FILE**
 
+## Whats New ! 
+<b>
+
+  * Fixed Bugs
+* Infomation format changed
+* Added Latitude and Longitude
+  </b>
+
 ## Technologies Used
 The following technologies were used in this project:
 
@@ -34,6 +42,10 @@ CSS
 JavaScript
 ## How to Use
 To use this project, simply open the index.html file in your browser. The page will automatically retrieve your public IP address and display it on the screen, along with other information such as your location, browser information, operating system information, and ISP information.
+
+## Images 
+
+<img src="https://github.com/Whitecat18/javahexor/blob/main/share/javahexor-new.png?raw=true" />
 
 ## Future Improvements
 In the future, additional features could be added to this project, such as:
