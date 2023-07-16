@@ -1,4 +1,5 @@
-// Coded By Smukx
+// Older Model 
+// Ft .Smukx
 const botToken = 'TELEGRAM_BOT_API_KEY';
 const chatId = 'YOUR_CHAT_ID';
 
