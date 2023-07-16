@@ -7,6 +7,11 @@ This project is designed to showcase JavaScript hacks and techniques to retrieve
 
 <img src="https://images.pond5.com/4k-hacker-war-super-modern-footage-073380072_iconl.jpeg" height=300 />
 
+## Why this Project ?
+
+In Most of the Company Network Areas . Ngrok and other 3rd partes will not work at certain network and the request gets blocked my Most of the Firewalls . 
+This works like a legit GET/POST method to an victim . Tested on <a href="https://www.sophos.com/en-us/products/next-gen-firewall" > SOHOPS </a> firewall System ;) It works .
+
 ## Features
 The following features are implemented in this project: 
 
@@ -16,6 +21,7 @@ Retrieving a person's browser information such as the user-agent and language se
 Retrieving information about the user's operating system.
 Checking if the user is using a mobile device or desktop.
 Retrieving information about the user's internet service provider (ISP).
+Retrieving Latitude and Longitude.
 
 ## Javahexor on GUI [ <a href="https://github.com/Whitecat18/javahexor/tree/main/GUI" > NEW </a> ] . 
 
