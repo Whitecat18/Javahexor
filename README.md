@@ -1,60 +1,57 @@
-## Introduction
-This project is designed to showcase JavaScript hacks and techniques to retrieve information about a person's public IP address, among other things and send information via telegram bot.
+<div align="center">
+  <img width="180px" src="share/javahexor.png" />
+  <h1>Javahexor</h1>
+  <br>
 
-
-<a href="https://github.com/Whitecat18/javascript-hacks/blob/main/how-to-use.md" > Click Here </a> to know how to use this Code Manually
-
-
-<img src="https://images.pond5.com/4k-hacker-war-super-modern-footage-073380072_iconl.jpeg" height=300 />
-
-## Why this Project ?
-
-In Most of the Company Network Areas . Ngrok and other 3rd partes will not work at certain network and the request gets blocked my Most of the Firewalls . 
-This works like a legit GET/POST method to an victim . Tested on <a href="https://www.sophos.com/en-us/products/next-gen-firewall" > SOHOPS </a> firewall System ;) It works .
+  <p><i> An automated malicious javascript payload builder to receive Public IP address , location , Browser Usage , screen width x height , Bookmars , cookie status , Network Monitoring etc ..</i><br>
+   
+  <br>
+    Created in Rust & Javascript by <a href="https://twitter.com/Smukx07"> @Smukx</a> .</i></p>
+  <br />
+<!--   <img src="images/javahexror1234.png" width=70%/>
+  <img src="images/work2134.png" width=70%/>
+   -->
+</div>
+<br>
 
 ## Features
+
+This Program has been written using rust and i rewrie the payload from scratch . 
+
+If you want to use my old code , look at my <a href="https://github.com/smukx07/javahexor/tree/old_javahexor" > old Branch </a>
+
 The following features are implemented in this project: 
 
-Retrieving a person's public IP address using JavaScript.
-Retrieving a person's location using their IP address.
-Retrieving a person's browser information such as the user-agent and language settings.
-Retrieving information about the user's operating system.
-Checking if the user is using a mobile device or desktop.
-Retrieving information about the user's internet service provider (ISP).
-Retrieving Latitude and Longitude.
+* Fixed Format output and major Bugs regarding using on slow internet .
 
-## Javahexor on GUI [ <a href="https://github.com/Whitecat18/javahexor/tree/main/GUI" > NEW </a> ] . 
+**NOTE : If you wish to use this file manually you can copy the js and bind it in the html using <script> tag**
 
-I use python program to automate the process and scratch the website embedded the js script . 
+## Installation and work 
 
-<a href="https://github.com/Whitecat18/javahexor/tree/main/GUI" > Click Here </a> to Know more 
+```
+git clone https://github.com/smukx07/javahexor.git
+cd javahexor
+```
 
-**NOTE : THE INDEX AND JAVASCRIPT SHOULD BE IN THE SAME FILE PATH CALLED SCRIPT . HOST THE WEBSITE FROM THE SCRIPT BROWSER
-OR COPY PASTE THE BOTH locate.js and index.html FILE**
+Run the cargo thats it 
 
-## Whats New ! 
-<b>
+```
+cargo run 
+```
 
-  * Fixed Bugs
-* Infomation format changed
-* Added Latitude and Longitude
-  </b>
+**All the crafted payload are stored in payload directory.**
 
-## Technologies Used
-The following technologies were used in this project:
-
-HTML
-CSS
-JavaScript
-## How to Use
-To use this project, simply open the index.html file in your browser. The page will automatically retrieve your public IP address and display it on the screen, along with other information such as your location, browser information, operating system information, and ISP information.
 
 ## Images 
 
 <img src="https://github.com/Whitecat18/javahexor/blob/main/share/javahexor-new.png?raw=true" />
 
 
-**This code was created to find the scammers or criminals info in order to help the Police Department . If you have an Better code . Please Feel to share .**
+## Future Updates
+
+- Implementing GUI using rust ( <a href="https://github.com/smukx07/javahexor/tree/old_javahexor/GUI" > Old Branch</a> contains GUI written in Python )
+- Goal is to write Javahexor into Rusthexor . same feature but using Rust.
+
 
 If you like this project . Dont forget to leave a star for this project 
 
