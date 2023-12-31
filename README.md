@@ -3,7 +3,7 @@
   <h1>Javahexor</h1>
   <br>
 
-  <p><i> An automated malicious javascript payload builder to receive Public IP address , location , Browser Usage , screen width x height , Bookmars , cookie status , Network Monitoring etc ..</i><br>
+  <p><i> An automated malicious javascript payload builder to receive Public IP address , location , Browser Usage , screen widths , Bookmarks , cookie status , Network Monitoring etc ..</i><br>
    
   <br>
     Created in Rust & Javascript by <a href="https://twitter.com/Smukx07"> @Smukx</a> .</i></p>
