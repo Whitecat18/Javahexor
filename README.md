@@ -39,6 +39,11 @@ Run the cargo thats it
 cargo run 
 ```
 
+* Select your options 
+* Provide Telegram BOT API and Chat_ID Keys 
+* Enter the url with protocol. Example https://www.example.com
+
+
 **All the crafted payload are stored in payload directory.**
 
 
