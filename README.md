@@ -53,16 +53,6 @@ To use this project, simply open the index.html file in your browser. The page w
 
 <img src="https://github.com/Whitecat18/javahexor/blob/main/share/javahexor-new.png?raw=true" />
 
-## Future Improvements
-In the future, additional features could be added to this project, such as:
-
-Retrieving the user's local IP address.
-Retrieving the user's MAC address.
-Checking if the user is using a VPN.
-Retrieving the user's network speed.
-Retrieving the user's screen resolution.
-## Conclusion
-This project demonstrates several useful JavaScript hacks and techniques for retrieving information about a user. By understanding how to retrieve this information, developers can create more personalized and targeted experiences for their users, while also improving their website's security and performance.
 
 **This code was created to find the scammers or criminals info in order to help the Police Department . If you have an Better code . Please Feel to share .**
 
