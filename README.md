@@ -28,12 +28,23 @@ The following features are implemented in this project:
 
 ## Installation and work 
 
+For Arch Linux Users 
+
 ```
 git clone https://github.com/smukx07/javahexor.git
 cd javahexor
 ```
 
-Run the cargo thats it 
+IF you are using debian based distros Ubuntu , Kali Linux etc..
+Follow this method
+
+```
+git clone https://github.com/smukx07/javahexor.git
+cd javahexor
+sudo apt-get install libgtk-3-dev
+```
+
+Run the cargo
 
 ```
 cargo run 
