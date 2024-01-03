@@ -1,4 +1,4 @@
-// For More Info Visit -> https://github.com/smukx07/javahexor
+// For More Info Visit -> https://github.com/Whitecat18/javahexor
 // New : Get OS Information, Coordinates of the device The Time does he opens the site. Location, Public Ipv4 , City , Device Basic Info..etc
 // [Location Changer needs https with ssl cert to run !! latitude and longitude fetcher]
 // Don't change the Line 5 and 6. Because Automation Script Plays a Role Here.
