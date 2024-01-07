@@ -1,73 +1,97 @@
 <div align="center">
   <img width="180px" src="share/javahexor.png" />
-  <h1>Javahexor</h1>
+  <h1>Javahexor </h1>
+  <p><i> An automated malicious javascript payload builder to receive Public IP address , Live Location , Browser Usage , screen width x height , Bookmars , cookie status , Network Monitoring etc through phishing.</i><br>
   <br>
-
-  <p><i> An automated malicious javascript payload builder to receive Public IP address , location , Browser Usage , screen widths , Bookmarks , cookie status , Network Monitoring etc ..</i><br>
-   
-  <br>
-    Created in Rust & Javascript by <a href="https://twitter.com/Smukx07"> @Smukx</a> .</i></p>
+    Created by <a href="https://twitter.com/Smukx07"> @Smukx</a> .</i></p>
   <br />
-<!--   <img src="images/javahexror1234.png" width=70%/>
-  <img src="images/work2134.png" width=70%/>
+   <img src="share/java-teg-bot.png" width=70%/>
+
+<!--
+<img src="images/work2134.png" width=70%/>
    -->
 </div>
-<br>
 
-## Features
 
-This Program has been written using rust and i rewrie the payload from scratch . 
+### Features 
 
-If you want to use my old code , look at my <a href="https://github.com/smukx07/javahexor/tree/old_javahexor" > old Branch </a>
+* Easy to use. Just input your Telegram BOT API KEY and your CHATID
+* Fast Server Requests on high level network latency.
+* Multiple tunneling options with HTTPS.
+* Get Fast Results using your Telegram bot.
+* Can handle many requests at the same time.
+* 100% uncrashable program
 
-The following features are implemented in this project: 
+### Testing
 
-* Fixed Format output and major Bugs regarding using on slow internet .
+Tested at Arch and Kali Linux .
 
-**NOTE : If you wish to use this file manually you can copy the js and bind it in the html using <script> tag**
+### Installation 
 
-## Installation and work 
-
-For Arch Linux Users 
-
-```
-git clone https://github.com/smukx07/javahexor.git
-cd javahexor
-```
-
-IF you are using debian based distros Ubuntu , Kali Linux etc..
-Follow this method
+*clone the repository and run the ./build.sh*
 
 ```
-git clone https://github.com/smukx07/javahexor.git
-cd javahexor
-sudo apt-get install libgtk-3-dev
+git clone https://github.com/Whitecat18/Javahexor.git
+cd Javahexor
+./build.sh
 ```
+## Quick Start
+### Telebot Help
 
-Run the cargo
+To Run Javahexor you need 2 things . Telegram bot API_KEY and CHAT_ID of your account. 
 
-```
-cargo run 
-```
+Obtain Telegram bot [API_KEY](https://www.siteguarding.com/en/how-to-get-telegram-bot-api-token) <br>
+Obtain Telegram [chat_id](https://t.me/raw_data_bot)
 
-* Select your options 
-* Provide Telegram BOT API and Chat_ID Keys 
-* Enter the url with protocol. Example https://www.example.com
+#### Demo Video
+
+Video content goes here ...
+
+### Tunnel Usages
+
+There will be 3 opensource tunneling options .
+
+* TunnelMole
+* Telebit
+* Bore
+
+You need to register only for Telebit. Its an free opensource reverse proxy. <br>
+Follow the instructions Telebit Instructions while installing using ./build.sh.
+
+### New Features Included
+
+* Accurate latitude longitude marker (Perfectly works on Mobile Devices). For PC's shows the location of ISP Providers.
+* Server written in Rust for faster Req and response to work at High latency.
+* Just an Click bait is enough to send the information .
+* Clone any site by providing URLS to the site with `https://` extension .
+
+### Extensibility
+
+* Add custom HTTPS Reverse Proxies by editing tunnel.rs .
+* Edit new_locate.js file to add new functions.
+
+### Next Update ? 
+
+* Integrating all Social Media Sited into javahexor .
+* Converting all js code into Rust .
+* Adding more Tunnel options.
 
 
-**All the crafted payload are stored in payload directory.**
+### Note 
+
+The location Option will only works on https , not on http while tunneling.
+
+### Credits
+
+Program created by Smukx . If you like this work please leave an star on this repo. so that i can motivate and do more nerdy works !
 
 
-## Images 
-
-<img src="https://github.com/Whitecat18/javahexor/blob/main/share/javahexor-new.png?raw=true" />
 
 
-## Future Updates
-
-- Implementing GUI using rust ( <a href="https://github.com/smukx07/javahexor/tree/old_javahexor/GUI" > Old Branch</a> contains GUI written in Python )
-- Goal is to write Javahexor into Rusthexor . same feature but using Rust.
 
 
-If you like this project . Dont forget to leave a star for this project 
+
+
+
+
 
