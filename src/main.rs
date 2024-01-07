@@ -37,7 +37,7 @@ async fn main() -> Result<(), anyhow::Error> {
         print_colored_banner(&banner).await?;
         println!();
         println!("Welcome to Javahexor 🦀");
-        println!("An Information extraction tool about users using malicious payloads")
+        println!("An Information extraction tool about users using phishing methods.");
         println!(
             "1. Build site from Scrach\n2. Start an HTTP server Locally \n3.Help \n4.Exit"
         );
