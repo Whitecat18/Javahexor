@@ -5,7 +5,7 @@
   <br>
     Created by <a href="https://twitter.com/Smukx07"> @Smukx</a> .</i></p>
   <br />
-   <img src="share/java-teg-bot.png" width=70%/>
+   <img src="share/javahexor-result.png" width=70%/>
 
 <!--
 <img src="images/work2134.png" width=70%/>
@@ -43,9 +43,9 @@ To Run Javahexor you need 2 things . Telegram bot API_KEY and CHAT_ID of your ac
 Obtain Telegram bot [API_KEY](https://www.siteguarding.com/en/how-to-get-telegram-bot-api-token) <br>
 Obtain Telegram [chat_id](https://t.me/raw_data_bot)
 
-#### Demo Video
+### Demo Video
 
-Video content goes here ...
+
 
 ### Tunnel Usages
 
@@ -72,9 +72,10 @@ Follow the instructions Telebit Instructions while installing using ./build.sh.
 
 ### Next Update ? 
 
-* Integrating all Social Media Sited into javahexor .
+* Integrating all Social Media Sited into javahexor.
 * Converting all js code into Rust .
 * Adding more Tunnel options.
+
 
 
 ### Note 
@@ -83,7 +84,7 @@ The location Option will only works on https , not on http while tunneling.
 
 ### Credits
 
-Program created by Smukx . If you like this work please leave an star on this repo. so that i can motivate and do more nerdy works !
+Program created by [@smukx](https://twitter.com/Smukx07) . If you like this work please leave an star on this repo. so that i can motivate and do more nerdy works! 
 
 
 
