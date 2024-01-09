@@ -45,7 +45,7 @@ Obtain Telegram [chat_id](https://t.me/raw_data_bot)
 
 ### Demo Video
 
-
+https://github.com/Whitecat18/Javahexor/assets/96696929/e1e1ab17-aeb3-42a5-aed4-f9a50b48e44e
 
 ### Tunnel Usages
 
@@ -80,7 +80,8 @@ Follow the instructions Telebit Instructions while installing using ./build.sh.
 
 ### Note 
 
-The location Option will only works on https , not on http while tunneling.
+* The location Option will only works on https , not on http while tunneling.
+* The fetcher wont fetch all files . it just fetch index files from the site.( Site Scraper will be avail on nxt update ) 
 
 ### Credits
 
