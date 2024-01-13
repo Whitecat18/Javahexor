@@ -16,7 +16,6 @@
 * Multiple tunneling options with HTTPS.
 * Get Fast Results using your Telegram bot.
 * Can handle many requests at the same time.
-* 100% uncrashable program
 
 ### Testing
 
