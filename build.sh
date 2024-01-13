@@ -7,6 +7,7 @@ if [ -f /etc/os-release ]; then
         sudo pacman -Syu --noconfirm
         # Installing Sources !
         sudo pacman -Syu
+        sudo pacman -S rust-all
         cargo install bore-cli
         curl -O https://install.tunnelmole.com/t357g/install && sudo bash install
         sudo curl https://get.telebit.io/ | bash
@@ -15,11 +16,13 @@ if [ -f /etc/os-release ]; then
 
     elif [[ "$ID" =~ debian|ubuntu|mint|kali ]]; then
         sudo apt update #sudo apt upgrade -y
-        npm install --save tunnelmole
+        sudo apt install rust-all
         cargo install bore-cli
-        sudo curl https://get.telebit.io/ | bash
+        sudo cp $HOME/.cargo/bin/bore /usr/bin/
+        # sudo curl https://get.telebit.io/ | bash 
         curl -O https://install.tunnelmole.com/t357g/install && sudo bash install
-	      sudo apt-get install libgtk-3-dev nodejs npm
+        sudo apt-get install libgtk-3-dev nodejs npm
+	npm install --save tunnelmole
         cargo build
     else
         echo "Unsupported distribution"
