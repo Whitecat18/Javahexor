@@ -73,7 +73,7 @@ Hexor 2.0 Demo
 
 There will be 3 opensource tunneling options .
 
-* TunnelMole
+* Tunnel Mole
 * Telebit
 * Bore
 * Tunnel Pyjam (manual)
