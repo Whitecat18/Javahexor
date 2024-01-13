@@ -20,7 +20,7 @@ macro_rules! inp_num {
 pub async fn tunnel() -> Result<(), anyhow::Error> {
     println!();
     println!("Select the Providers");
-    println!("1.TunnelMole \n2.Telebit \n3.Bore");
+    println!("1.TunnelMole \n2.Telebit \n3.Bore \n4.Tunnel Pyjam ");
     print!("Your Option :");
     inp_num!(y as u8);
 
@@ -42,6 +42,11 @@ pub async fn tunnel() -> Result<(), anyhow::Error> {
             println!("Starting bore");
             start_bore().await?;
             println!("Closed without any error . Exiting");
+            exit(1);
+        },
+        4 => {
+            println!("Showcasing :");
+            start_tunnel_pyjam().await?;
             exit(1);
         },
         _ => {
@@ -104,7 +109,21 @@ pub async fn start_bore() -> Result<(), anyhow::Error>{
     Ok(())
 }
 
+pub async fn start_tunnel_pyjam() -> Result<(), anyhow::Error>{
+    println!("This is an different tunnel , you must enable it automatically !");
+    println!("Open New Terminal and execute the following commands ");
+    println!("-----------");
+    println!("curl https://tunnel.pyjam.as/8080 > tunnel.conf && wg-quick up ./tunnel.conf ");
+    println!("-----------");
+    println!();
+    println!("To stop the tunnel . Type !");
+    println!("-----------");
+    println!("wg-quick down ./tunnel.conf");
+    println!("-----------");
+    println!();
+    println!("Press any key to continue...");
+    std::io::stdin().read_line(&mut String::new()).unwrap();
 
-
-
+    Ok(())
+}
 

@@ -33,34 +33,60 @@ use actix_web::{web, App, HttpServer, HttpResponse, HttpRequest, error::Error as
 use std::path::PathBuf;
 use anyhow::Result;
 use nix::unistd::{fork, ForkResult};
-
+use actix_files::Files;
 
 pub async fn index(_req: HttpRequest) -> Result<HttpResponse, ActixError> {
     let path = PathBuf::from("payload/index.html");
     let content = std::fs::read_to_string(&path)?;
-
     Ok(HttpResponse::Ok()
         .content_type("text/html")
-        .body(content)
-
-    )
+        .body(content))
 }
 
-pub async fn js_file(_req: HttpRequest) -> Result<HttpResponse, ActixError> {
-    let path = PathBuf::from("payload/new_locate.js");
-    let content = std::fs::read_to_string(&path)?;
 
-    Ok(HttpResponse::Ok()
-        .content_type("application/javascript")
-        .body(content)
-    )
-}
+// pub async fn js_file(_req: HttpRequest) -> Result<HttpResponse, ActixError> {
+//     let path = PathBuf::from("payload/new_locate.js");
+//     let content = std::fs::read_to_string(&path)?;
+//
+//     Ok(HttpResponse::Ok()
+//         .content_type("application/javascript")
+//         .body(content)
+//     )
+// }
 
 async fn error_handle(err: ActixError, _req: HttpRequest) -> ActixError {
     actix_web::error::InternalError::from_response(err, HttpResponse::InternalServerError().finish()).into()
 }
 
 // child server for subprocessing
+// pub async fn child_server() -> Result<(), anyhow::Error> {
+//     match unsafe {fork ()}{
+//         Ok(ForkResult::Parent {child, ..}) => {
+//             println!("Server running in background on port http://localhost:8080, on PID : {:?}", child);
+//             return Ok(());
+//         }
+//         Ok(ForkResult::Child) => {
+//             HttpServer::new(|| {
+//                 App::new()
+//                     .route("/", web::get().to(index))
+//                     .service(Files::new("/static", "payload"))
+//                     .route("/new_locate.js", web::get().to(js_file))
+//                     .route("index_files/main.css", web::get().to(index))
+//                     .route("main.js",web::get().to(js_file))
+//                     .app_data(web::Data::new(|| error_handle))
+//             })
+//                 // Change you IP or Port no if needed . For Linux using below 1024 port requires special permission -> use sudo to run the program
+//                 .bind("127.0.0.1:8080")?
+//                 .run()
+//                 .await?;
+//             Ok(())
+//         }
+//         Err(_) => {
+//             return Err(anyhow::Error::msg("Failed to background process"));
+//         }
+//     }
+// }
+
 pub async fn child_server() -> Result<(), anyhow::Error> {
     match unsafe {fork ()}{
         Ok(ForkResult::Parent {child, ..}) => {
@@ -71,10 +97,9 @@ pub async fn child_server() -> Result<(), anyhow::Error> {
             HttpServer::new(|| {
                 App::new()
                     .route("/", web::get().to(index))
-                    .route("/new_locate.js", web::get().to(js_file))
+                    .service(Files::new("/", "payload")) // Serve all files from "payload"
                     .app_data(web::Data::new(|| error_handle))
             })
-                // Change you IP or Port no if needed . For Linux using below 1024 port requires special permission -> use sudo to run the program
                 .bind("127.0.0.1:8080")?
                 .run()
                 .await?;
@@ -86,12 +111,13 @@ pub async fn child_server() -> Result<(), anyhow::Error> {
     }
 }
 
+
 // parent_server for localhost only
 pub async fn parent_server() -> Result<(), anyhow::Error> {
     HttpServer::new(|| {
         App::new()
             .route("/", web::get().to(index))
-            .route("/new_locate.js", web::get().to(js_file))
+            .service(Files::new("/", "payload")) // Serve all files from "payload"
             .app_data(web::Data::new(|| error_handle))
     })
         .bind("127.0.0.1:8080")?

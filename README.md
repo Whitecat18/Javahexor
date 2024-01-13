@@ -4,19 +4,15 @@
   <p><i> An automated malicious javascript payload builder to receive Public IP address , Live Location , Browser Usage , screen width x height , Bookmars , cookie status , Network Monitoring etc through phishing.</i><br>
   <br>
     Created by <a href="https://twitter.com/Smukx07"> @Smukx</a> .</i></p>
-  <br />
+   <img src="share/javahexor-result_1.png" width=70%>
    <img src="share/javahexor-result.png" width=70%/>
-
-<!--
-<img src="images/work2134.png" width=70%/>
-   -->
 </div>
-
 
 ### Features 
 
-* Easy to use. Just input your Telegram BOT API KEY and your CHATID
+* Register your key only time
 * Fast Server Requests on high level network latency.
+* Bind Custom websites and tunnel with it . 
 * Multiple tunneling options with HTTPS.
 * Get Fast Results using your Telegram bot.
 * Can handle many requests at the same time.
@@ -35,17 +31,44 @@ git clone https://github.com/Whitecat18/Javahexor.git
 cd Javahexor
 ./build.sh
 ```
+
 ## Quick Start
 ### Telebot Help
 
 To Run Javahexor you need 2 things . Telegram bot API_KEY and CHAT_ID of your account. 
 
-Obtain Telegram bot [API_KEY](https://www.siteguarding.com/en/how-to-get-telegram-bot-api-token) <br>
-Obtain Telegram [chat_id](https://t.me/raw_data_bot)
+Guide to obtain Telegram bot [API_KEY](https://www.siteguarding.com/en/how-to-get-telegram-bot-api-token) <br>
+Guide to obtain Telegram [chat_id](https://t.me/raw_data_bot)
+
+### How to use this Tool !
+
+There are 4 options that you can use it
+
+1. Bind custom website
+    * Bind to your custom website . Just Download or save the page into payload
+      folder with the name ( index.html ).
+    * Before using this option . Make sure to save your file to the /payload dir .
+    * Remember . Save or rename your main .html file into **index.html** .
+
+2. Create a New Site from Scratch
+    * This will Download an site Only(index.html) file and serve it !
+    * You can use it to serve simple site such as example.com etc..
+
+3. Start and serve HTTP Server 
+    * If you want to reuse the payload without anychanges . you can use this method .
+    * This will automatically will start and fetch the file to localhost .
+
+4. Help
+    * Displays Help 
+
+5. Exit
+    * Exit the Program in an safe way.
 
 ### Demo Video
 
+Hexor 3.0 Demo [Custom Binding]
 
+Hexor 2.0 Demo
 
 ### Tunnel Usages
 
@@ -54,16 +77,21 @@ There will be 3 opensource tunneling options .
 * TunnelMole
 * Telebit
 * Bore
+* Tunnel Pyjam (manual)
 
 You need to register only for Telebit. Its an free opensource reverse proxy. <br>
+
+If you face any issues on Telebit Installations . Visit the site [Telebit](https://telebit.cloud/) and install it manually 
+
 Follow the instructions Telebit Instructions while installing using ./build.sh.
 
 ### New Features Included
 
+* Custom Binding on Websites . Save your site on /payload directory & build and bind with your site and start tunneling . 
 * Accurate latitude longitude marker (Perfectly works on Mobile Devices). For PC's shows the location of ISP Providers.
 * Server written in Rust for faster Req and response to work at High latency.
 * Just an Click bait is enough to send the information .
-* Clone any site by providing URLS to the site with `https://` extension .
+* Clone any site by providing URLS to the site with `https://` or `http://` extension for 2nd Option . You can watch the Javahexor 2.0 Video to understand the module well !.
 
 ### Extensibility
 
@@ -73,14 +101,13 @@ Follow the instructions Telebit Instructions while installing using ./build.sh.
 ### Next Update ? 
 
 * Integrating all Social Media Sited into javahexor.
-* Converting all js code into Rust .
-* Adding more Tunnel options.
-
+* Converting all js code into Rust.
+* Adding some more opensource tunnels.
 
 
 ### Note 
 
-The location Option will only works on https , not on http while tunneling.
+*The location tracker will only works on https , not on http while tunneling.*
 
 ### Credits
 
