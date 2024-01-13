@@ -10,7 +10,7 @@
 
 ### Features 
 
-* Register your key only time
+* Register your key only time . It saves automatically for future operations .
 * Fast Server Requests on high level network latency.
 * Bind Custom websites and tunnel with it . 
 * Multiple tunneling options with HTTPS.
