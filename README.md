@@ -65,9 +65,13 @@ There are 4 options that you can use it
 
 ### Demo Video
 
-Hexor 3.0 Demo [Custom Binding]
+<h4>Hexor 3.0 Demo [Custom Binding]</h4>
 
-Hexor 2.0 Demo
+https://github.com/Whitecat18/Javahexor/assets/96696929/b28728d0-9e1e-4cac-94e5-8c0723908a57
+
+<h4>Hexor 2.0 Demo</h4>
+
+https://github.com/Whitecat18/Javahexor/assets/96696929/e1e1ab17-aeb3-42a5-aed4-f9a50b48e44e
 
 ### Tunnel Usages
 
