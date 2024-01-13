@@ -19,7 +19,7 @@ if [ -f /etc/os-release ]; then
         sudo apt install rust-all
         cargo install bore-cli
         sudo cp $HOME/.cargo/bin/bore /usr/bin/
-        # sudo curl https://get.telebit.io/ | bash 
+        sudo curl https://get.telebit.io/ | bash 
         curl -O https://install.tunnelmole.com/t357g/install && sudo bash install
         sudo apt-get install libgtk-3-dev nodejs npm
 	npm install --save tunnelmole
