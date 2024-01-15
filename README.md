@@ -77,10 +77,10 @@ https://github.com/Whitecat18/Javahexor/assets/96696929/e1e1ab17-aeb3-42a5-aed4-
 
 There will be 3 opensource tunneling options .
 
-* Tunnel Mole
-* Telebit
-* Bore
-* Tunnel Pyjam (manual)
+* [Tunnel Mole](https://tunnelmole.com/)
+* [Telebit](https://telebit.cloud/)
+* [Bore](https://github.com/ekzhang/bore)
+* [Tunnel Pyjam](https://tunnel.pyjam.as/) (manual)
 
 You need to register only for Telebit. Its an free opensource reverse proxy. <br>
 
@@ -111,6 +111,8 @@ Follow the instructions Telebit Instructions while installing using ./build.sh.
 ### Note 
 
 *The location tracker will only works on https , not on http while tunneling.*
+
+If you find any Errors while tunneling . Install the [Tunneling services](#tunnel-usages) manually.
 
 ### Credits
 
