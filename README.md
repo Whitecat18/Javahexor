@@ -3,7 +3,7 @@
   <h1>Javahexor </h1>
   <p><i> An automated malicious javascript payload builder to receive Public IP address , Live Location , Browser Usage , screen width x height , Bookmars , cookie status , Network Monitoring etc through phishing.</i><br>
   <br>
-    Created by <a href="https://twitter.com/Smukx07"> @Smukx</a> .</i></p>
+    Created by <a href="https://twitter.com/5mukx"> @Smukx</a> .</i></p>
    <img src="share/javahexor-result_1.png" width=70%>
    <img src="share/javahexor-result.png" width=70%/>
 </div>
