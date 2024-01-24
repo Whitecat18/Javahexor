@@ -1,5 +1,3 @@
-#[warn(non_snake_case)]
-#[warn(unused_imports)]
 mod bind;
 mod website_cloner;
 mod localhost;
@@ -7,18 +5,21 @@ mod tunnel;
 
 
 use std::fs;
-// use std::io;
 use tokio;
-use std::io::Write;
+use std::{
+    io::{Write,BufReader, Read},
+    io::{self,BufRead},
+    fs::File,
+    process::{exit,Command},
+};
+use ansi_term::Colour;
+use std::{thread, time::Duration}; 
 use bind::{bind_js_to_file, bind_js_to_html,check_keys ,check_keys_default,extend_bind};
 use website_cloner::download_index_html;
 use tunnel::tunnel;
 use localhost::{child_server, parent_server};
-use std::process::exit;
-use std::process::Command;
 // use anyhow::Context;
-use std::fs::File;
-use std::io::{BufReader, Read};
+
 #[allow(unused_macros)]
 macro_rules! read {
     ($out:ident as $type:ty) => {
@@ -29,19 +30,21 @@ macro_rules! read {
     };
 }
 
-
 #[tokio::main]
 async fn main() -> Result<(), anyhow::Error> {
     // Input api_key and chat_id
     // Here we are using keys and urls only ones so we dont need worry about ownership ;)
+    
     let banner = read_banner("files/banner.md").await;
     let mini_banner = read_banner("files/mini_banner.md").await;
     print_colored_banner(&mini_banner).await?;
     println!("Welcome to Javahexor 🦀");
     println!("Checking Keys !");
     check_keys_default();
-    println!("Press any key to continue ...");
-    std::io::stdin().read_line(&mut String::new()).unwrap();
+    println!("Redirecting ...");
+    thread::sleep(Duration::from_millis(1000));
+    
+    // std::io::stdin().read_line(&mut String::new()).unwrap();
     Command::new("clear").status().unwrap();
     loop {
         print_colored_banner(&banner).await?;
@@ -53,7 +56,9 @@ async fn main() -> Result<(), anyhow::Error> {
         );
         print!("Option : ");
         read!(x as u8);
-
+        // let x = get_input();
+        // let x = x.trim().parse::<u8>().expect("Error while parsing");
+        
         match x {
             1 => {
                 // Will start creating paylaod from scratch
@@ -235,19 +240,20 @@ async fn read_banner(filename: &str) -> String {
     banner
 }
 
-async fn print_colored_banner(banner: &str) -> Result<(),anyhow::Error>{
-    let mut stdout = std::io::stdout();
-    for line in banner.lines() {
-        let color_code = match line.chars().nth(0) {
-            Some('A') => "\x1b[31m",
-            Some('B') => "\x1b[32m",
-            Some('C') => "\x1b[33m",
-            _ => "\x1b[0m",
-        };
+async fn print_colored_banner(_banner: &str) -> Result<(),anyhow::Error>{
+    let banner_path = "files/banner.md";
 
-        writeln!(stdout, "{}{}", color_code, line).unwrap();
+    if let Ok(file) = File::open(banner_path){
+        let reader = io::BufReader::new(file);
+
+        for line in reader.lines(){
+            if let Ok(ascii) = line{
+                println!("{}",Colour::RGB(255,140,0).paint(ascii));
+        
+            }
+        }
+    } else {
+        eprintln!("BanneR error occuers continuing {}", banner_path);
     }
-
-    write!(stdout, "\x1b[0m").unwrap();
     Ok(())
 }

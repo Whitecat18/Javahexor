@@ -1,1 +1,1 @@
-Save your custom website or any http site with the index.html name ! 
+Save your custom website or any http site with the name index.html 

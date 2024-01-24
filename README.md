@@ -43,11 +43,11 @@ Guide to obtain Telegram [chat_id](https://t.me/raw_data_bot)
 
 There are 4 options that you can use it
 
-1. Bind custom website
-    * Bind to your custom website . Just Download or save the page into payload
+1. Bind custom website (Recommend)
+    * Bind your custom website . Just Download or save the page into payload
       folder with the name ( index.html ).
     * Before using this option . Make sure to save your file to the /payload dir .
-    * Remember . Save or rename your main .html file into **index.html** .
+    * Remember . Save or rename your main html file into **index.html** .
 
 2. Create a New Site from Scratch
     * This will Download an site Only(index.html) file and serve it !
@@ -116,7 +116,9 @@ If you find any Errors while tunneling . Install the [Tunneling services](#tunne
 
 ### Credits
 
-Program created by [@smukx](https://twitter.com/Smukx07) . If you like this work please leave an star on this repo. so that i can motivate and do more nerdy works! 
+Program created by [@smukx](https://twitter.com/5mukx) . If you like this work please leave an star on this repo. so that i can motivate and do more nerdy works! 
+
+If you want to look at my old javahexor that was actually written using python and js . Visit my Old [Branch](https://github.com/Whitecat18/Javahexor/tree/old_javahexor)
 
 
 

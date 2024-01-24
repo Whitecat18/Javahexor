@@ -22,7 +22,7 @@ if [ -f /etc/os-release ]; then
         sudo curl https://get.telebit.io/ | bash 
         curl -O https://install.tunnelmole.com/t357g/install && sudo bash install
         sudo apt-get install libgtk-3-dev nodejs npm
-	npm install --save tunnelmole
+	    npm install --save tunnelmole
         cargo build
     else
         echo "Unsupported distribution"
