@@ -86,7 +86,10 @@ You need to register only for Telebit. Its an free opensource reverse proxy. <br
 
 If you face any issues on Telebit Installations . Visit the site [Telebit](https://telebit.cloud/) and install it manually 
 
-Follow the instructions Telebit Instructions while installing using ./build.sh.
+Follow the instructions while installing tunnels using ./build.sh.
+
+The ,build.sh will automatically detect the distros and install the requirements and necessary pakages to run the program.
+Note that we are installing 4 Opensource tunnels. if you find any error please mention it on the issues . 
 
 ### New Features Included
 
@@ -110,7 +113,7 @@ Follow the instructions Telebit Instructions while installing using ./build.sh.
 
 ### Note 
 
-*The location tracker will only works on https , not on http while tunneling.*
+*The location tracker will only works on https , not on http while tunneling. We are using an SOC Technique to gather exact location using geolocation. Remaining All the Tasks will be done by JSON API'S *
 
 If you find any Errors while tunneling . Install the [Tunneling services](#tunnel-usages) manually.
 
