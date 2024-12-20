@@ -1,34 +1,38 @@
 #!/bin/bash
 
+# Check if /etc/os-release exists
 if [ -f /etc/os-release ]; then
     source /etc/os-release
 
-    if [[ "$ID" == "arch" ]]; then
-        sudo pacman -Syu --noconfirm
-        # Installing Sources !
-        sudo pacman -Syu
-        sudo pacman -S rust-all
-        cargo install bore-cli
-        curl -O https://install.tunnelmole.com/t357g/install && sudo bash install
-        sudo curl https://get.telebit.io/ | bash
-        sudo pacman -S gtk3
-        cargo build
-
-    elif [[ "$ID" =~ debian|ubuntu|mint|kali ]]; then
-        sudo apt update #sudo apt upgrade -y
-        sudo apt install rust-all
-        cargo install bore-cli
-        sudo cp $HOME/.cargo/bin/bore /usr/bin/
-        sudo curl https://get.telebit.io/ | bash 
-        curl -O https://install.tunnelmole.com/t357g/install && sudo bash install
-        sudo apt-get install libgtk-3-dev nodejs npm
-	    npm install --save tunnelmole
-        cargo build
-    else
-        echo "Unsupported distribution"
-        exit 1
-    fi
+    case "$ID" in
+        arch)
+            echo "Detected Arch Linux. Installing dependencies..."
+            sudo pacman -Syu --noconfirm
+            sudo pacman -S --noconfirm rust gtk3 base-devel
+            cargo install bore-cli
+            curl -O https://install.tunnelmole.com/t357g/install && sudo bash install
+            sudo curl -s https://get.telebit.io/ | bash
+            cargo build
+            ;;
+        
+        debian|ubuntu|mint|kali)
+            echo "Detected Debian-based distribution. Installing dependencies..."
+            sudo apt update && sudo apt upgrade -y
+            sudo apt install -y curl build-essential libgtk-3-dev rustc cargo nodejs npm
+            cargo install bore-cli
+            sudo cp "$HOME/.cargo/bin/bore" /usr/bin/
+            sudo curl -s https://get.telebit.io/ | bash
+            curl -O https://install.tunnelmole.com/t357g/install && sudo bash install
+            npm install --save tunnelmole
+            cargo build
+            ;;
+        
+        *)
+            echo "Unsupported distribution: $ID"
+            exit 1
+            ;;
+    esac
 else
-    echo "Unable to determine distribution."
+    echo "Unable to determine distribution: /etc/os-release not found."
     exit 1
 fi
