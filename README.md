@@ -1,9 +1,9 @@
 <div align="center">
   <img width="180px" src="share/javahexor.png" />
-  <h1>Javahexor </h1>
+  <h1>JavaHexor</h1>
   <p><i> An automated malicious javascript payload builder to receive Public IP address , Live Location , Browser Usage , screen width x height , Bookmars , cookie status , Network Monitoring etc through phishing.</i><br>
   <br>
-    Created by <a href="https://twitter.com/5mukx"> @Smukx</a> .</i></p>
+    Created by <a href="https://twitter.com/5mukx"> @5mukx</a> .</i></p>
    <img src="share/javahexor-result_1.png" width=70%>
    <img src="share/javahexor-result.png" width=70%/>
 </div>
@@ -119,7 +119,7 @@ If you find any Errors while tunneling . Install the [Tunneling services](#tunne
 
 ### Credits
 
-Program created by [@smukx](https://twitter.com/5mukx) . If you like this work please leave an star on this repo. so that i can motivate and do more nerdy works! 
+Program created by [@5mukx](https://twitter.com/5mukx) . If you like this work please leave an star on this repo. so that i can motivate and do more nerdy works! 
 
 If you want to look at my old javahexor that was actually written using python and js . Visit my Old [Branch](https://github.com/Whitecat18/Javahexor/tree/old_javahexor)
 
